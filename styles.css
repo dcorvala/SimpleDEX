@@ -1,33 +1,65 @@
 body {
     font-family: Arial, sans-serif;
-    text-align: center;
-    margin: 20px;
-}
-
-input {
-    margin: 5px;
-    padding: 8px;
-}
-
-button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-h1, h2 {
+    background-color: #f4f4f9;
     color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #34495e;
+    margin-top: 20px;
 }
 
 div {
-    margin: 20px;
+    margin-bottom: 20px;
     padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 300px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 5px 0;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px 0;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+#statusMessage {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+p {
+    text-align: center;
+    font-size: 1.1em;
 }
