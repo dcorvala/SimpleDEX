@@ -35,10 +35,20 @@
 
     <div>
         <h2>Obtener Precio</h2>
-        <button onclick="getPrice('TokenA')">Precio de TokenA</button>
-        <button onclick="getPrice('TokenB')">Precio de TokenB</button>
+        <button onclick="getPriceForTokenA()">Precio de TokenA</button>
+        <button onclick="getPriceForTokenB()">Precio de TokenB</button>
         <p id="priceResult"></p>
     </div>
+    
+
+    <div>
+        <h2>Aprobar Tokens</h2>
+        <input id="approveAmount" type="number" placeholder="Cantidad a Aprobar">
+        <button onclick="approveTokens(tokenAAddress, document.getElementById('approveAmount').value)">Aprobar Token A</button>
+        <button onclick="approveTokens(tokenBAddress, document.getElementById('approveAmount').value)">Aprobar Token B</button>
+    </div>
+
+    <p id="statusMessage"></p>
 
     <script src="app.js"></script>
 </body>
