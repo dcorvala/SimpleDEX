@@ -1,0 +1,6 @@
+# SimpleDEX
+Repositorio TP Módulo 4
+
+Lo hice con html y le di formato con css. La interacción de los contratos con el front se hace con JS. Me hubiera gustado implementar Scaffold-ETH y las otras herramientas vista en el curso pero no llegué con todo.
+
+Arreglé lo que me faltaba en la entrega del TP3, me pedían que agragara el control de acceso en los contratos. Hice deploy de los nuevos y los verifiqué.
