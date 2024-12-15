@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SimpleDEX Front-End</title>
+    <script src="https://cdn.jsdelivr.net/npm/web3/dist/web3.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>SimpleDEX</h1>
+    <div>
+        <h2>Agregar Liquidez</h2>
+        <input id="amountA" type="number" placeholder="Cantidad de TokenA">
+        <input id="amountB" type="number" placeholder="Cantidad de TokenB">
+        <button onclick="addLiquidity()">Agregar Liquidez</button>
+    </div>
+
+    <div>
+        <h2>Retirar Liquidez</h2>
+        <input id="removeA" type="number" placeholder="Cantidad de TokenA">
+        <input id="removeB" type="number" placeholder="Cantidad de TokenB">
+        <button onclick="removeLiquidity()">Retirar Liquidez</button>
+    </div>
+
+    <div>
+        <h2>Intercambiar Tokens</h2>
+        <h3>Token A → Token B</h3>
+        <input id="swapA" type="number" placeholder="Cantidad de TokenA">
+        <button onclick="swapAforB()">Intercambiar</button>
+        <h3>Token B → Token A</h3>
+        <input id="swapB" type="number" placeholder="Cantidad de TokenB">
+        <button onclick="swapBforA()">Intercambiar</button>
+    </div>
+
+    <div>
+        <h2>Obtener Precio</h2>
+        <button onclick="getPrice('TokenA')">Precio de TokenA</button>
+        <button onclick="getPrice('TokenB')">Precio de TokenB</button>
+        <p id="priceResult"></p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
